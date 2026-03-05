@@ -967,3 +967,626 @@ They interpret instructions differently.
 
 
 
+AI Tools and APIs
+---
+
+# Github Models
+
+## 🔹 What is GitHub Models?
+
+GitHub launched something called **GitHub Models**.
+
+Think of it like:
+
+> 🏪 A **single store inside GitHub** where you can try and use different AI models from different companies — without creating separate accounts everywhere.
+
+---
+
+## 🔹 What Models Can You Use?
+
+Inside GitHub Models, you can access models from companies like:
+
+* OpenAI
+* Mistral AI
+* Meta (Llama models)
+* Microsoft (Phi models)
+
+So instead of:
+
+* Creating OpenAI account
+* Creating Mistral account
+* Creating Azure account
+
+You just use your **GitHub account**.
+
+---
+
+# 💥 Why Is It “Game Changing”?
+
+There are 3 main reasons:
+
+## ✅ 1. It’s Free (For Prototyping)
+
+Even if you have a **free GitHub account**, you get:
+
+* ~50 AI requests per day
+* Enough for building and testing AI apps
+
+Perfect for:
+
+* DevOps engineers learning AI
+* Building PoCs
+* Testing RAG apps
+* Experimenting
+
+Not for production chatbots — but perfect for development.
+
+---
+
+## ✅ 2. One Endpoint for All Models (Easy Model Switching)
+
+Normally:
+
+If you switch from OpenAI → Mistral → Llama
+You must:
+
+* Change API keys
+* Change endpoint URLs
+* Change SDK code
+* Update configuration
+
+With GitHub Models:
+
+👉 All models come from **one Azure AI endpoint**
+👉 You just change the **model name**
+
+Example idea:
+
+```python
+model = "gpt-4"
+```
+
+Change to:
+
+```python
+model = "mistral-large"
+```
+
+That’s it. No major code changes.
+
+For a DevOps engineer, this means:
+
+* Cleaner architecture
+* Easier experimentation
+* No vendor lock complexity during testing
+
+---
+
+## ✅ 3. No API Key Mess (This Is the Real Big Deal)
+
+Normally when using AI APIs, you must:
+
+* Generate API keys
+* Store in environment variables
+* Configure secrets
+* Paste tokens
+* Manage auth manually
+
+With GitHub Models:
+
+👉 It uses your GitHub login
+👉 If you're logged into GitHub, you're already authenticated
+
+So:
+
+* In GitHub Codespaces → it just works
+* In VS Code (if signed into GitHub) → it just works
+* No key pasting needed
+
+For DevOps people:
+
+This removes:
+
+* Secret management complexity (for testing)
+* Token rotation headaches (for PoC)
+* Config mistakes
+
+---
+
+# 🧠 Why This Matters for You (DevOps Perspective)
+
+Since you're getting into AI + DevOps, this is powerful because:
+
+You can:
+
+* Build AI-based log analyzers
+* Create AI alert explainers for ELK
+* Build AI chatbot for troubleshooting SOPs
+* Create RAG system using embeddings
+* Experiment without worrying about billing
+
+All using just:
+
+* Your GitHub account
+* Your existing repo
+* Your VS Code
+
+---
+
+# 🔄 Can You Still Move to Production Later?
+
+Yes.
+
+If later you want:
+
+* Dedicated OpenAI API
+* Azure AI production setup
+* Another vendor
+
+You just:
+
+* Change the endpoint
+* Add vendor API keys
+* Deploy normally
+
+So it doesn’t lock you in.
+
+Claude Artifacts
+---
+
+## 🔹 What does “Artifact” mean in general?
+
+In software, an **artifact** usually means:
+
+> 📦 A generated output file or object created during development.
+
+Examples:
+
+* A compiled `.jar` file
+* A Docker image
+* A build `.zip` file
+* A generated report
+
+Basically: **something produced as a result of work**.
+
+## 🔹 What is a “Claude Artifact”?
+
+In Anthropic’s AI assistant Claude, an **Artifact** is:
+
+> 📄 A separate, structured output that Claude creates and displays beside the chat.
+
+Instead of just replying with text in chat, Claude can generate:
+
+* Full code files
+* React components
+* Markdown documents
+* Diagrams
+* HTML pages
+* Long structured content
+
+And it shows them in a **separate panel**, not mixed into the chat.
+
+## 🔹 Why Is It Called an “Artifact”?
+
+Because it’s treated like:
+
+> 🏗 A real development output — something you can use, copy, edit, or build on.
+
+It’s not just a casual answer.
+It’s more like:
+
+* A generated file
+* A mini project
+* A working component
+
+## 🔹 Example (DevOps Context)
+
+If you ask Claude:
+
+> “Create a Terraform module for an S3 bucket.”
+
+Instead of giving code inside chat, it creates:
+
+* A full Terraform file
+* Proper formatting
+* Editable file view
+
+That file is the **artifact**.
+
+## 🔹 Why This Is Useful
+
+For DevOps engineers like you:
+
+Artifacts are powerful because:
+
+* You can generate full Dockerfiles
+* Generate CI/CD YAML pipelines
+* Generate Helm charts
+* Generate SOP documentation
+* Generate React dashboards
+
+And edit them live.
+
+It feels more like:
+
+> AI as a coding partner
+> Not just AI as a chatbot
+
+
+Microsoft Security Copilot
+---
+
+As we open computer, email, we can see there is emails bombards, and your boss tell you that give me report on top threads.
+
+At that time we don't know how to create reports on top of threads, alert emails.
+
+## 🔐 Importance of Microsoft Security Copilot
+
+**Microsoft Security Copilot** is an AI-powered cybersecurity assistant built on **GPT-4** and running on **Microsoft Azure**.
+It helps security teams quickly analyze threats, investigate incidents, and respond faster using AI.
+
+It acts like a **“copilot” for security analysts**, assisting them in managing large numbers of alerts and making better decisions.
+
+## 🚀 What Microsoft Security Copilot Can Do
+
+1. **Understand Natural Language Queries**
+
+   * Users can type simple questions in plain English.
+   * Example: *“Show top threats today”* or *“Explain this security alert.”*
+
+2. **Threat Detection and Analysis**
+
+   * Uses Microsoft’s global threat intelligence from **65 trillion daily signals**.
+   * Identifies active cyberattacks and suspicious activity.
+
+3. **Step-by-Step Incident Guidance**
+
+   * Provides instructions on how to investigate and respond to security incidents.
+
+4. **Security Investigation**
+
+   * Analyzes logs, alerts, and system data to detect vulnerabilities or breaches.
+
+5. **Report Generation**
+
+   * Automatically creates summaries and reports for incidents and threats.
+
+6. **Automation of Security Tasks**
+
+   * Automates repetitive work so analysts can focus on important investigations.
+
+## 👨‍💻 What Users (Security Analysts / Teams) Can Do With It
+
+Anyone in a security team can:
+
+* Ask security questions in **plain language**
+* **Investigate cyber incidents faster**
+* **Prioritize alerts** among thousands of threats
+* **Understand attacks and vulnerabilities**
+* **Generate security reports**
+* **Get recommendations for response actions**
+
+✅ **Key Idea:**
+**Microsoft Security Copilot does not replace security analysts.**
+It **assists them by using AI to analyze threats faster and provide intelligent guidance.**
+
+---
+
+OpenAI API
+---
+
+When **OpenAI** first released its API for models like **GPT-4**, developers could use AI in applications, but **many important features were missing.**
+
+Due to this, developers had to **manually manage everything** when building AI agents or chat systems.
+
+## What developers had to do Manually
+
+### 1. Send all msg every time
+
+- AI models **Doesn't remember previous conversations automatically**.
+
+- So developers had to send below things manually every time:
+  
+  - **System msgs** - Instructions for AI
+  - **User msgs** - User Questions
+  - **Assistant msgs** - AI's Previous reply on that user's questions.
+
+### 2. Manage conversations state
+
+- AI Doens't store chat history itself.
+
+- So developers had to:
+
+  - Save **each msg & response in a DB**.
+  - Retrieve the whole conversation history.
+  - Send it again with the next request.
+
+- This porcess is called **State management** `Which is keep track of the conversations automatically`.
+
+### 3. Build Extra logic
+
+- Developers also had to create code for:
+
+  - Controlling conversaton flow
+  - Storing chat history
+  - Managing tokens and cost
+  - Handling responses.
+
+`IN RESPONSE TO THIS, OpenAI has now introduced the` **Assistance API**.
+
+- This API is similar to creating **custom AI assistants**, like **ChatGPT Custom GPTs**, but for developers using code.
+
+It makes building AI applications **much easier and faster**.
+
+## What Developers can do with Assistants API
+
+- With the Assistants API, developers can creat **Custom AI Assistants** that have:
+
+  - Their **own instructions** 
+  - Their **own tools** - like running code or calling functions
+  - Their **own knowledge** - you own docs or data to reference
+  - **Automatic chat memory** - state management
+
+## 3 Main componenets of Assistats API
+
+### 1. Assistant
+- An **Assistant** is the main AI Agent.
+
+- Each assistant has:
+
+  - A **Unique ID**
+  - Instructions by Prompts
+  - Tools
+  - Uploaded docs
+- Example:
+
+  - A **customer support assistant**
+  - A **coding assistant**
+  - A **security analysis assistant**
+
+**You can create many assistant for diff purpose**.
+
+### 2. Threads
+
+- Threads stores chat history to remember it.
+- Threads can stores multiple chat parallelly and you can swith between them.
+- Each Threads will identified by its own IDs.
+
+- Example 
+
+  - ChatGPT
+
+    - You can open **New Chat** and it will open new windows, in left side is called Threads.
+
+    - By clicking on **New Chat** you can open multiple threads and it will save your conversations automatically.
+
+- So you can switch betweens chats without losing context.
+
+### 3. Runs
+
+- A **Run** is one **interactions with the assistant**.
+
+- It includes:
+
+  - A **Prompts**
+  - The **AI Response**
+
+- It is your Input windows where you can ask and give input prompt to AI.
+
+## How conversations Memory works
+
+Assistants remember conversations using threads.
+
+But internally, the system still:
+  
+  - Sends the entire conversations thread instead of required data
+  - Adds the new msg
+  - Generates a response
+
+This means:
+
+  - As conversation grows → **token usage increases**
+
+  - So **long conversations cost more tokens**.
+
+## What if we don't use Assistant API ?
+
+Models like GPT-4 have a limited context window (token limit).
+
+That means the model can only read a certain amount of text at one time.
+
+- Conversation becomes very long
+- System can't send the **entire chat history** anymore
+- Older msg may be **truncated or ignored**.
+
+- So AI will **forget earlier conversations**.
+
+## AI Agent / Assistant API solve this
+
+- The OpenAI Assistants API helps by automatically managing conversation history using threads.
+
+- So developers don’t need to manually store messages anymore.
+
+- Instead of sending the whole conversations threads, the agent retrieves only relevant informations.
+
+- Agent can stores data in External Mamory like DB, vector stores.
+
+---
+
+Physical AI
+---
+
+- **Physical AI** means **AI running on physical machines or devices** so they can **sense their environment and make real-time decisions**.
+
+It combines:
+
+  - AI models
+
+  - Sensors
+
+  - Real-world machines
+
+- So machines can understand the physical world and act automatically.
+
+- This connects the digital world (AI software) with the physical world (machines and devices).
+
+**Example**
+
+  - self-driving cars
+  - warehouse robots
+  - robotic surgicalarms
+  - autonomous tractors
+
+  ## Key Technologies Related to Physical AI
+
+  ### 1. Edge AI
+
+  AI running **directly on a device instead of in the cloud**.
+
+  Ex. `A camera detecting objects inside the camera device itself.`
+
+  for , Faster response, less internet dependency, real-time decisions.
+
+  ### 2. Embedded AI
+
+- AI is **In-build directly into the hardware** like chips, sensors, network devices.
+
+- The device itself processes data and makes decisions.
+
+- `Smart drones with AI chips`.
+
+### 3. Embodied AI
+
+- Physical AI is also called **Embodied AI**.
+
+- AI is **Inside a physical body of machine or devices** so that can, sense, think and act.
+
+## Role of Generative AI and Agent AI
+
+- Modern Generative AI and AI agents are making Physical AI more powerful.
+
+They help machines:
+
+- analyze sensor data
+
+- reason about situations
+
+- make decisions
+
+- perform actions automatically
+
+Example:
+
+Robot receives sensor data →
+AI analyzes environment →
+AI agent decides what action to take.
+
+CPUs vs GPUs vs NPUs
+---
+
+### CPU
+
+- The Central Processing Unit is the main processor of a computer.
+
+What CPUs Do ?
+  - Run OS
+  - Execute Prog.
+  - Manage system ops
+  - Handle general computing tasks
+
+  - Running Softwares, Apps.
+
+### GPU
+
+- The Graphics Processing Unit was originally created for graphics and gaming.
+
+- But later engineers realized GPUs are great for AI and machine learning.
+
+- GPUs have **thousands of small cores**.
+
+- This allows them to perform **many calculations at the same time**.
+
+- This is called **parallel processing**.
+
+Best for
+  - Graphics rendering
+  - Video porcessing
+  - AI model training
+
+### NPU (Neural Processing Unit)
+
+- The **Neural Processing Unit** is a **special processor designed specifically for AI tasks**.
+
+  - Matrix multiplications
+  - Vector calc
+  - AI Inference
+
+`Even though GPUs are good for AI, NPUs are built only for AI workloads.`
+
+
+By using **NPU** you can perform **trillions of operations per second**, which is enogh and good for AI Tasks.
+
+
+Cursor - Code with AI
+---
+
+- Cursor (code editor) is an AI-powered code editor based on Visual Studio Code.
+
+- It helps developers write, fix, and improve code using AI.
+
+- You can think of it as VS Code + powerful AI assistant.
+
+**Cursor** can understand your **entire project code**, **Generate new code**, **Debug errors**, **Refactor existing code**, **Explaine code**.
+
+- This means developers don’t need to search Google or StackOverflow frequently.
+
+## AI Models Supported by Cursor
+
+  - Claude
+  - DeepSeek
+  - OpenAI o3
+
+ChatGPT OpenAI Operators
+---
+
+- OpenAI Operator is an AI agent tool inside ChatGPT that can perform tasks on a computer or website automatically.
+
+- Unlike normal chatbots that only give answers, Operator can:
+
+  - use a browser
+
+  - click buttons
+
+  - type text
+
+  - fill forms
+
+  - interact with websites
+
+So it can complete tasks for you automatically.
+
+How Operator is different than normal AI
+---
+
+**Normal AI**
+  - Answer questions
+  - Generate Text, videos, docs
+  - Give instructions
+
+**Operators**
+  - **Open Websites**
+  - **Fill login forms**
+  - **Click menus**
+  - Submit informations
+
+  - **Examples**
+     
+    - Open Websites
+    - Click elements
+    - Fill forms
+    - Complete the tasks like Ticket Booking
+
+`This is very helpfull while you are designing and creating AI Agent for Travel Booking`.
+
+- This is Available in **PRO**.
+
