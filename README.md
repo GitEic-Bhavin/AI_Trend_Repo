@@ -2013,3 +2013,219 @@ Future AI models may **learn from this content**.
 | Short-Term GEO | Improve existing content so AI uses it in answers today     |
 | Long-Term GEO  | Publish authoritative content that AI learns from over time |
 
+---
+
+Cluade Code on the Web
+---
+
+Traditionally, Claude Code was used mainly in two ways:
+
+1. CLI (Terminal)
+2. IDE Extensions (VS Code etc.)
+
+Now Anthropic added a third options **Cluade Code on the web**.
+
+- You can directly access from claude at cluade.ai means from browser.
+
+Before **Added Cluade Code on the Web** Probem was like:
+
+  - Local Installtions
+  - CLI Setup
+  - IDE Extensions
+  - API Confg
+  
+Claude Code on the web solves:
+  ✅ Connect your GitHub repositories
+  ✅ Ask Claude questions about code
+  ✅ Let Claude modify code
+  ✅ Create Pull Requests automatically
+  ✅ Run tasks remotely
+
+Claude **doesn't run on your computer**, It runs on **Anthropic-managed VM**
+
+- You can add **GitHub** as connector from cluade.ai
+
+- You can choose your specific repos, permissions to work with github
+
+- After added this repos, Now you can ask questions related your repos to cluade.
+
+- Cluade will analyze folder structure, dependencies, code, and whole repos data.
+
+- You can ask to claude: 
+  `Review this repository for issues`
+
+- Claude can check for bugs, security risks, performance problems, bad code patterns etc
+
+You **Can create PULL REQUEST** Automatically
+
+- Afted applied changes in your code, claude can automatically create a PR in GitHub which will **requires your Approval & Review**.
+
+```bash
+Claude changes code
+      ↓
+Creates commit
+      ↓
+Creates Pull Request
+      ↓
+Developer reviews
+      ↓
+Merge
+```
+
+**Secure Executions**
+
+All tasks runs in **Sanboxed Env** inside **Isolated VM**.
+
+- It will Protects your system, Limits network access, Prevents data leaks.
+
+- You can control, to `Allowed domains`, `Env Vars`, `API Keys`.
+
+GitHub MCP Registry
+---
+
+MCP - Model Context Protocol
+
+It is a Std protocol that allows AI models to interact with external tools / services.
+
+It can execute real actions.
+
+**Without MCP:**
+
+`You: Convert PDF to Markdown`
+`AI: Will give you Markdown in that env and not create a file in your env`
+
+**With MCP:**
+
+`You: Convert PDF to Markdown`
+`AI: Converting PDF to Markdown now...`
+`File created ✔`
+
+## What is an MCP Server
+
+- MCP Server exposes tools that AI Agent can use.
+
+| MCP Server     | Tool                |
+| -------------- | ------------------- |
+| GitHub MCP     | create_repo         |
+| AWS MCP        | create_ec2          |
+| Filesystem MCP | read_file           |
+| PDF MCP        | convert_to_markdown |
+
+
+## Problem Before MCP Registry
+
+Before the registry existed, Devlopers had to:
+  
+  1. Find MCP server manually
+  2. Clone GitHub repo
+  3. Install dependencies
+  4. Configure manually
+
+## What is the GitHub MCP Registry
+
+The **GitHub MCP Registry** is a place where developers can **Discover MCP Servers** from [MCP Registry](https://github.com/mcp)
+
+![alt text](mcpliste.png)
+
+Inside the registry you can find:
+
+  - Available MCP servers
+
+  - Install buttons
+
+  - Documentation
+
+  - GitHub repo
+
+  - Tools provided
+
+This MCP Servers are **Decentralized Registry**
+
+| Organization | MCP Servers                |
+| ------------ | -------------------------- |
+| Bank         | Internal financial systems |
+| Company      | Internal ticket system     |
+| Startup      | CRM integration            |
+| Developers   | Public tools               |
+
+
+## Install MCP Server
+
+- You can directly install MCP Server on VS Code by Go to **Extenstions** > search **@MCP** > Install.
+
+**Verify MCP Server Installed**
+
+Ctrl + Shift + P
+Type mcp:open user configurations
+clik on it.
+
+It will open mcp.json file
+
+![alt text](mcpinstalled.png)
+
+# GPT-5 Codex Concept
+
+## Overview
+
+GPT-5 Codex is an AI model designed for **agentic software engineering**. Unlike a normal chatbot, it can read, understand, and modify an entire codebase.
+
+## Core Idea
+
+Traditional AI coding tools respond to prompts. Codex acts like an **AI developer** that can plan and execute coding tasks across a project.
+
+## Key Capabilities
+
+* Read full repositories
+* Understand project structure
+* Create, update, and delete files
+* Refactor existing code
+* Add new features
+* Run commands and tests
+
+## Interfaces
+
+Codex can work through:
+
+* CLI (terminal)
+* Cloud interface
+* IDE integrations
+* GitHub mentions
+
+## Typical Workflow
+
+1. Developer opens project folder
+2. Starts Codex CLI
+3. Gives a task
+4. Codex scans the project
+5. Creates a plan
+6. Modifies files
+7. Shows diff for approval
+
+## Example Task
+
+Developer command:
+
+```
+Add JWT authentication to this Node.js API
+```
+
+Codex actions:
+
+* Reads project files
+* Creates authentication middleware
+* Updates routes
+* Installs required packages
+
+## ChatGPT vs Codex
+
+| ChatGPT                     | Codex                     |
+| --------------------------- | ------------------------- |
+| General AI assistant        | Specialized coding agent  |
+| Provides code suggestions   | Edits full projects       |
+| Prompt-response interaction | Multi-step task execution |
+
+## Impact
+
+Codex represents a shift from **AI-assisted coding** to **AI-driven development workflows**, where developers focus on defining goals and AI performs much of the implementation.
+
+
