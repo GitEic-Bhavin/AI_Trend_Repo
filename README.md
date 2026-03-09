@@ -2228,4 +2228,121 @@ Codex actions:
 
 Codex represents a shift from **AI-assisted coding** to **AI-driven development workflows**, where developers focus on defining goals and AI performs much of the implementation.
 
+# Context Engineering — Simple Notes
+
+## What is Context Engineering?
+
+Context engineering means giving an AI model (LLM or AI agent) the **right information at the right time** so it can correctly decide what to do.
+
+It involves:
+
+* Supplying relevant data
+* Providing tool access
+* Giving enough instructions
+* Ensuring the AI understands the task
+
+Goal: Help the AI take the correct action.
+
+## Context Engineering vs Prompt Engineering
+
+### Prompt Engineering
+
+Prompt engineering focuses on **how you ask the AI a question**.
+
+Example:
+"Summarize this document in 5 bullet points."
+
+### Context Engineering
+
+Context engineering focuses on **what information and tools the AI has access to**.
+
+Example:
+
+* Give AI access to a database
+* Provide API connections
+* Supply relevant documents
+
+It prepares the environment for the AI to make good decisions.
+
+## Why Context Engineering is Important
+
+LLMs work best when they receive:
+
+* Relevant information
+* Clear instructions
+* Access to necessary tools
+
+Without proper context, the AI may:
+
+* Make wrong decisions
+* Produce incorrect answers
+* Fail to complete tasks
+
+## Role in AI Agents
+
+Context engineering is critical when building **AI agents**.
+
+An AI agent needs to know:
+
+* What tools it can use
+* What data it can access
+* What task it must complete
+
+Example workflow:
+
+User Request -> AI Agent -> Context Data -> Tool Usage -> Result
+
+## Challenges of Context Engineering
+
+### Too Much Information
+
+If too much data is provided:
+
+* AI gets confused
+* Costs increase
+* Processing slows down
+
+### Too Little Information
+
+If not enough context is given:
+
+* AI makes wrong assumptions
+* Tasks fail
+
+Balance is very important.
+
+## Monitoring AI Agents
+
+Two things must be monitored:
+
+1. **Cost** (token usage)
+2. **Performance** (accuracy and task completion)
+
+AI systems can become expensive if context is not managed carefully.
+
+## Connection to Machine Learning
+
+Context engineering is similar to **feature engineering in machine learning**.
+
+Feature engineering:
+
+* Selecting the right input features for ML models
+
+Context engineering:
+
+* Selecting the right information for LLMs at runtime
+
+Both improve model performance.
+
+## Important Tool: MCP
+
+One emerging standard is **MCP (Model Context Protocol)**.
+
+MCP provides a standardized way for AI agents to connect to:
+
+* external tools
+* APIs
+* databases
+
+This helps AI systems interact with real-world systems.
 
