@@ -2346,3 +2346,193 @@ MCP provides a standardized way for AI agents to connect to:
 
 This helps AI systems interact with real-world systems.
 
+# Perplexity Comet Browser – Simple Explanation
+
+## 1. Browser Wars (History)
+
+In the 1990s there was a competition called the "Browser Wars" between Internet Explorer and Netscape Navigator to control how people access the internet.
+
+Later Google Chrome became the dominant browser because it was fast and based on open‑source Chromium. Today Chrome controls about 66% of the browser market.
+
+Many browsers like Microsoft Edge, Brave, and Opera are also built using Chromium.
+
+## 2. Problem Today
+
+AI tools like ChatGPT and Perplexity are changing how people search for information.
+
+Instead of typing keywords into Google search, people ask AI questions directly.
+
+This reduces traffic to traditional search engines.
+
+## 3. What is Perplexity Comet?
+
+Comet is a new browser built by Perplexity.
+
+It is based on Chromium but has AI built directly into the browser.
+
+This means the AI assistant is always available while browsing.
+
+## 4. How to Access Comet
+
+You need:
+
+* Perplexity Pro account
+  OR
+* Perplexity Max plan ($200)
+
+Then request an invite and download the browser.
+
+## 5. Main Difference From Normal Browsers
+
+In Chrome or Edge:
+Search → Google
+
+In Comet:
+Search → Perplexity AI
+
+The address bar (Omnibar) sends queries directly to the Perplexity AI search engine.
+
+## 6. AI Threads
+
+Each question becomes a "Thread".
+
+Threads allow you to:
+
+* Ask follow‑up questions
+* Verify sources
+* See reasoning steps
+* Share answers
+
+## 7. AI Features in Results
+
+Perplexity results include:
+
+Sources
+List of websites used for the answer.
+
+Steps
+Shows how the AI generated the answer.
+
+Tables
+AI automatically creates structured tables for information.
+
+## 8. Exporting Results
+
+You can export answers as:
+
+* PDF
+* Markdown
+* Microsoft Word (DOCX)
+
+## 9. Research Mode
+
+This works like "Deep Research".
+
+AI performs deeper analysis using multiple sources.
+
+## 10. Labs
+
+Labs allow you to create structured AI outputs similar to:
+
+* ChatGPT Canvas
+* Gemini Workspace
+
+These outputs are more like documents or projects.
+
+## 11. Spaces
+
+Spaces are folders for organizing conversations.
+
+You can include:
+
+* Files
+* Links
+* Custom instructions
+
+Example:
+AI Research Space
+Startup Idea Space
+Project Documentation
+
+## 12. Pages
+
+Threads can be converted into Pages.
+
+Pages are structured AI‑generated documents.
+
+You can:
+
+* Edit sections
+* Add media
+* Rearrange content
+* Publish publicly
+
+## 13. Tasks
+
+Tasks allow scheduled prompts.
+
+Example:
+
+* "Check AI news every morning"
+* "Summarize emails every evening"
+
+## 14. AI Models
+
+Perplexity has its own model called **Sonar**.
+
+But you can also choose other models depending on your plan.
+
+## 15. Connectors
+
+Connectors allow AI to access external tools.
+
+Examples:
+
+* Gmail
+* Google Calendar
+* Google Drive
+
+This lets the AI read emails, summarize them, and create reminders.
+
+## 16. AI Browser Assistant
+
+One of the most powerful features is the browser assistant.
+
+While reading a webpage you can ask:
+
+* "Summarize this page"
+* "List links from this article"
+* "Explain this section"
+
+The AI reads the webpage and answers instantly.
+
+## 17. Voice Commands
+
+You can control the browser using voice.
+
+Example:
+
+"Open my last five articles"
+
+"Group these tabs"
+
+"Suggest new article ideas"
+
+The AI performs actions in the browser.
+
+## 18. Why This is Important
+
+Traditional browser:
+Human → Search → Website → Read
+
+AI browser:
+Human → Ask AI → AI reads websites → Gives answer
+
+This makes browsing faster and more intelligent.
+
+## 19. Key Idea
+
+Comet turns the browser into an AI assistant instead of just a website viewer.
+
+The AI becomes part of the browsing experience.
+
